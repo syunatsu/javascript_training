@@ -1,0 +1,32 @@
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+main {
+  max-width: 1000px;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 50px auto;
+}
+
+main #button {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: blue;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+main #result {
+  background-color: #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 50px;
+}
