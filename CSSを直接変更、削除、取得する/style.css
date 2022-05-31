@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+}
