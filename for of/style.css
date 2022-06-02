@@ -1,0 +1,30 @@
+body {
+  color: #333;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+main {
+  max-width: 1000px;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 50px auto;
+}
+
+li {
+  font-size: 20px;
+  list-style: none;
+}
+
+li::before {
+  content: '・';
+}
+
+li:not(:first-of-type) {
+  margin-top: 10px;
+}
