@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  height: 200vh;
+}
+
+.menuButton {
+  display: block;
+  height: 80px;
+  width: 80px;
+  background-color: pink;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.menuButton div {
+  height: 1px;
+  width:60%;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.menuButton div:nth-child(1) {
+  transform: translate(-50%, -15px);
+}
+
+.menuButton div:nth-child(3) {
+  transform: translate(-50%, 15px);
+}
+
+.menuButton.active div:nth-child(1) {
+  transform: rotate(45deg) translate(-50%, 0);
+  transform-origin: 0% 50%;
+}
+
+.menuButton.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.menuButton.active div:nth-child(3) {
+  transform: rotate(-45deg) translate(-50%, 0);
+  transform-origin: 0% 50%;
+}
+
+nav {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+nav.active {
+  opacity: 1;
+  visibility: visible;
+}
