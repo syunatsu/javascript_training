@@ -6,8 +6,7 @@ const fruit = {
 
 let total = 0;
 for (const key in fruit) {
+  console.log(`${key}の値段は${fruit[key]}です`);
   total += fruit[key];
 }
-console.log(total); 
-
-Object.keys(fruit).forEach(key => console.log(key))
+console.log(total);
